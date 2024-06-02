@@ -1,0 +1,53 @@
+.container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.conFlex1{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.conFlex{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.conFlex p,
+.conFlex1 p {
+    font-size: 0.8rem;
+}
+
+.specialFlex{
+    display: flex;
+    gap: 0.35rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.specialFlex p,
+.specialFlex span{
+    font-size: 0.8rem;
+}
+.specialWord{
+    letter-spacing: 0.25rem;
+    color: rgb(91, 91, 91);
+}
+
+@media(max-width: 900px) {
+  
+    .conFlex1{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+  
+  }

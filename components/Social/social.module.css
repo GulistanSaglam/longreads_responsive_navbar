@@ -1,0 +1,36 @@
+.container{
+    padding: 2rem;
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p{
+    font-style: italic;
+}
+.socialLinks{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.socialLinks p{
+    font-size: 0.8rem;
+}
+
+@media(max-width: 900px) {
+    .container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .container p{
+        font-size: 0.9rem;
+    }
+    .socialLinks p{
+        font-size: 0.7rem;
+    }
+  }

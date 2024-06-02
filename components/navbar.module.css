@@ -1,0 +1,118 @@
+
+.largeScreen{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.logoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-left: -15rem;
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+.logoImage{
+    border-radius: 50%;
+    padding: 0.15rem;
+    border:2px solid  rgb(198, 2, 2);
+}
+.largeLink{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.supportUs{
+    font-size: 0.8rem;
+    font-style: italic;
+    padding:0.4rem 0.7rem;
+    background-color: rgb(198, 2, 2);
+    border: 1px solid gray;
+    color: white;
+    border-radius: 4px;
+}
+
+.smallIcon{
+    display: none;
+}
+
+.smallMenuOpen{
+ display: none;
+}
+
+.smallMenuClose{
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .largeScreen{
+        display: none;
+    }
+    .logoContainer{
+        margin-left: 0;
+    }
+    .smallIcon{
+        display: flex;
+    }
+    
+    .smallMenuOpen{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100vh;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        bottom: 0;
+        left:0;
+        background-color: white;
+        transition: ease-in 0.75s;
+    }
+
+    .smallMenuClose{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100vh;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        bottom: 0;
+        left:-100%;
+        background-color: white;
+        transition: ease-in 0.75s;
+    }
+
+    .smallMenu{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        padding: 1rem;
+        font-style: italic;
+    }
+    .smallMenuList{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 1.5rem;
+    }
+    .socialLinks{
+        display: flex;
+        border-top: 1px solid gray;
+    }
+    .socialList{
+        margin-top: 1rem;
+        display: flex;
+        gap:0.75rem;
+        font-size: 0.7rem;
+    }
+    .whiteSmall{
+        font-size: 0.9rem;
+        color: rgb(54, 54, 54);
+        font-weight: 600; 
+    }
+  }

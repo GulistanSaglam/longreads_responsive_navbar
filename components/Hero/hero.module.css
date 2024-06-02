@@ -1,0 +1,82 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: black;
+}
+
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.left p,
+.left span{
+    color:white;
+    font-style: italic;
+}
+
+.left span{
+    color:gray;
+}
+
+.left h1{
+    font-size:2rem;
+    color: white;
+}
+
+.left button{
+    color: white;
+    width: fit-content;
+    padding: 0.8rem 3rem;
+    background-color: rgb(198, 2, 2);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.right{
+    flex: 2;
+}
+.heroImage{
+    height: 70vh
+}
+
+@media(max-width: 900px) {
+   
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        gap: 7rem;
+        margin-top: 1.3rem;
+    }
+   .heroImage{
+    height: 25vh;
+    object-fit: cover;
+   }
+    .left{
+        height: 25vh;
+    }
+    .left h1{
+        font-size:1rem;
+        color: white;
+    }
+    .left p,
+    .left span{
+    font-size: 0.9rem;
+    font-style: italic;
+    }
+
+    .left button{
+        padding: 0.8rem 1rem;
+        background-color: rgb(198, 2, 2);
+        border-radius: 4px;
+        font-size: 1rem;
+        font-style: italic;
+    }
+  }
